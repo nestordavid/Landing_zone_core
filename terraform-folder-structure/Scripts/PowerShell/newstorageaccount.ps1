@@ -22,7 +22,7 @@ Write-Host "Module does not exist"
 }
   Catch{
     Throw $_.Exception.Message
-} 
+    } 
 }  
 
 # Connect to Azure using service principal
@@ -47,10 +47,12 @@ if ($storageAccount -eq $null) {
 	    AllowBlobPublicAccess  = $false
         PublicNetworkAccess    = "Disabled"
         MinimumTlsVersion      = "TLS1_2"
-        AllowSharedKeyAccess   = $false
+        AllowSharedKeyAccess   = $true
     }
 
     New-AzStorageAccount @storageConfig
+
+    $storage = Get-AzStorageAccount -ResourceGroupName $resourcegroupname
 
     Write-Host "Storage account '$storageAccountName' created successfully."
 } else {
