@@ -2,7 +2,7 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "=3.66.0"
+      version = "=3.108.0"
     }
   }
 }
@@ -18,7 +18,8 @@ module "lz-vending" {
     for_each = var.lz_vending
   source   = "Azure/lz-vending/azurerm"
   version  = "4.1.1"
-  location = "centralus"
+  # location = "centralus"
+  location = "${var.primary_location}"
 
   subscription_alias_enabled = true
   subscription_alias_name    = each.value.subscription_alias_name

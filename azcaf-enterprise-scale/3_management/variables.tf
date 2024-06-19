@@ -3,7 +3,7 @@ variable "subscription_id_management" {
 }
 
 variable "root_id" {
-  default = "lmty"
+  default = "demo"
 }
 
 variable "log_retention_in_days" {
@@ -11,5 +11,5 @@ variable "log_retention_in_days" {
 }
 
 variable "primary_location" {
-  default = "centralus"
+  default = "eastus"
 }
