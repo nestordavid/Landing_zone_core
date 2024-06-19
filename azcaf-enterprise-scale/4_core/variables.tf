@@ -3,25 +3,25 @@
 variable "root_id" {
   type        = string
   description = "Sets the value used for generating unique resource naming within the module."
-  default     = "lmty"
+  default     = "demo"
 }
 
 variable "root_name" {
   type        = string
   description = "Sets the value used for the \"intermediate root\" management group display name."
-  default     = "Let Me Tech You"
+  default     = "Core"
 }
 
 variable "primary_location" {
   type        = string
   description = "Sets the location for \"primary\" resources to be created in."
-  default     = "centralus"
+  default     = "eastus"
 }
 
 variable "secondary_location" {
   type        = string
   description = "Sets the location for \"secondary\" resources to be created in."
-  default     = "eastus"
+  default     = "centralus"
 }
 
 variable "subscription_id_identity" {
