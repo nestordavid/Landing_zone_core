@@ -14,7 +14,7 @@ lz_vending = {
         subscription_alias_enabled = true
         subscription_alias_name = "demo-management"
         subscription_display_name = "Management"
-        subscription_workload = "Development"    
+        subscription_workload = "DevTest"    
     }
 
     subscription03 = {
