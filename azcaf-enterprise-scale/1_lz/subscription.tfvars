@@ -20,8 +20,8 @@ lz_vending = {
     subscription03 = {
         subscription_alias_enabled = true
         subscription_alias_name = "demo-identity"
-        subscription_display_name = "DevTest"
-        subscription_workload = "Identity"    
+        subscription_display_name = "Management"
+        subscription_workload = "Production"    
     }
 }
 
