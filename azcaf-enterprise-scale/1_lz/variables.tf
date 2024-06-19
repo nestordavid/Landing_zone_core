@@ -1,4 +1,4 @@
-variable "lz_vending" {
+variable "subscription" {
 
 }
 
@@ -12,7 +12,7 @@ variable "root_id" {
   type        = string
 }
 
-variable "billing_profile" {
-  description = "The name appended to landing zones"
-  type        = string
-}
+# variable "billing_profile" {
+#   description = "The name appended to landing zones"
+#   type        = string
+# }
