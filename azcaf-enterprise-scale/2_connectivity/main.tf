@@ -30,8 +30,9 @@ data "azurerm_client_config" "current" {}
 
 module "alz" {
   source  = "Azure/caf-enterprise-scale/azurerm"
-  version = "4.1.0" # change this to your desired version, https://www.terraform.io/language/expressions/version-constraints
-  default_location = "centralus"
+  version = "4.1.1" # change this to your desired version, https://www.terraform.io/language/expressions/version-constraints
+  # default_location = "centralus"
+  default_location = "${var.primary_location}"
   providers = {
     azurerm              = azurerm
     azurerm.connectivity = azurerm

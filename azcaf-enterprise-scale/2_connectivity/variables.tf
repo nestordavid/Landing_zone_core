@@ -5,7 +5,7 @@ variable "subscription_id_connectivity" {
 
 variable "root_id" {
   description = "The name appended to landing zones"
-  default = "lmty"
+  default = "demo"
 }
 
 variable "enable_ddos_protection" {
@@ -15,10 +15,10 @@ variable "enable_ddos_protection" {
 
 variable "primary_location" {
   description = "primary hub"
-  default = "centralus"
+  default = "eastus"
 }
 
 variable "secondary_location" {
   description = "secondary hub"
-  default = "eastus"
+  default = "centralus"
 }

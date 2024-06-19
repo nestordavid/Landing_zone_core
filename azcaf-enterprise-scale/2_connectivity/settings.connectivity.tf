@@ -42,10 +42,12 @@ locals {
             azurerm_resource_group = {
                 connectivity = {
                     (var.primary_location) = {
-                        name = "kevin-rg-location1"
+                        # name = "demo-rg-location1"
+                        name = "${var.root_id}-rg-location1"
                     },
                     (var.secondary_location) = {
-                        name = "kevin-rg-location2"
+                        # name = "demo-rg-location2"
+                        name = "${var.root_id}-rg-location2"
                     }
                 }
             }
